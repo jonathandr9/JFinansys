@@ -131,7 +131,9 @@ namespace Sql.Adapter
                 {
                     connection.Open();
 
-                    var consulta = @"UPDATE DESPESA                                          
+                    despesa.ID = Guid.Parse(ID);
+
+                    var consulta = @"UPDATE DESPESA SET                                        
                                           DESCRICAOGASTO = @DESCRICAOGASTO
                                         , VALORGASTO = @VALORGASTO
                                         , DATALANCAMENTO = @DATALANCAMENTO
