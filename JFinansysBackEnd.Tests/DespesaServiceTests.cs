@@ -41,5 +41,16 @@ namespace JFinansysBackEnd.Tests
             //Assert
             Assert.Equal(despesasExpected, despesasResult);
         }
+
+        [Fact]
+        [Trait("InserirDespesa","Despesa")]
+        public void InserirDespesa_DespesaService_Sucesso()
+        {
+            //Arrange
+
+            //Act
+
+            //Assert
+        }
     }
 }
