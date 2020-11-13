@@ -13,9 +13,10 @@ namespace JFinansysBackEnd.Application
         {
             _entradaSqlAdapter = entradaSqlAdapter;
         }
+
         public void AtualizarEntrada(string ID, Entrada entrada)
         {
-            throw new System.NotImplementedException();
+            _entradaSqlAdapter.AtualizarEntrada(ID, entrada);
         }
 
         public void IncluirEntrada(Entrada entrada)
@@ -25,12 +26,12 @@ namespace JFinansysBackEnd.Application
 
         public Entrada ListaEntradaPorID(string ID)
         {
-            throw new System.NotImplementedException();
+            return _entradaSqlAdapter.BuscarEntradaPorID(ID);
         }
 
         public IEnumerable<Entrada> ListarEntradas()
         {
-           return  _entradaSqlAdapter.ListarEntradas();
+            return _entradaSqlAdapter.ListarEntradas();
         }
     }
 }

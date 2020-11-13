@@ -11,6 +11,10 @@ namespace JFinansysBackEnd.WebApi
             CreateMap<DespesaPost, Despesa>()
                 .ForMember(d => d.DescricaoGasto,
                 opt => opt.MapFrom(o => o.DescricaoDespesa));
+
+            CreateMap<EntradaPost, Entrada>()
+               .ForMember(d => d.DescricaoEntrada,
+               opt => opt.MapFrom(o => o.DescricaoEntrada));
         }
     }
 }

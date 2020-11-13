@@ -40,6 +40,8 @@ namespace JFinansysBackEnd
             //https://docs.microsoft.com/pt-br/dotnet/core/extensions/dependency-injection
             services.AddSingleton<IDespesaSqlAdapter, DespesaSqlAdapter>();
             services.AddSingleton<IDespesaService, DespesaService>();
+            services.AddSingleton<IEntradaSqlAdapter, EntradaSqlAdapter>();
+            services.AddSingleton<IEntradaService, EntradaService>();
             services.AddSingleton<IConfiguration>(Configuration);
             services.AddSingleton(mapperConfig.CreateMapper());
 

@@ -1,10 +1,9 @@
 ﻿using System;
 
-namespace JFinansysBackEnd.Domain.Models
+namespace JFinansysBackEnd.WebApi.Dto
 {
-    public class Entrada
+    public class EntradaPost
     {
-        public Guid ID { get; set; } = Guid.NewGuid();
         public string DescricaoEntrada { get; set; }
         public decimal ValorEntrada { get; set; }
         public DateTime DataLancamento { get; set; }
